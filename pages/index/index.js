@@ -173,14 +173,14 @@ Page({
    * 同步下载网络图片
    */
   makeDownloadFile: function (url) {
-    return new Promise((reslove, reject) => {
+    return new Promise((resolve, reject) => {
       if (url.indexOf('wxfile') != -1) {
-        reslove(url)
+        resolve(url)
       } else {
         wx.downloadFile({
           url: url,
           success: (res) => {
-            reslove(res.tempFilePath)
+            resolve(res.tempFilePath)
           },
           fail: (res) => {
             console.error(res)
