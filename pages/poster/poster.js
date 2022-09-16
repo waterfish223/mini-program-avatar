@@ -11,7 +11,7 @@ Page({
     loading: false,
     posterSrc: null,
     imageurl: null,
-    qrcode: '../../images/icon/mini.png',
+    qrcode: '../../images/icon/title.png',
     fonts: 'normal bold 100px NSimSun',
     titles1: '',
     titles2: '来给图像加节日标签吧',
